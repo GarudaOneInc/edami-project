@@ -1,4 +1,4 @@
-import Image from "next/image";
+/*import Image from "next/image";
 
 
 export default function Home() {
@@ -6,6 +6,15 @@ export default function Home() {
     <>
     </>    
   );
-}
+}*/
 
+import Image from 'next/image';
+
+export default function Page() {
+  return (
+    <div>
+      <Image src="/example.jpg" alt="Example" width={500} height={300} />
+    </div>
+  );
+}
 
