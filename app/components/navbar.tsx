@@ -28,7 +28,7 @@ const Navbar = async () => {
                 <span>Create</span>
               </Link>
 
-              <form onSubmit={ async () => {
+              <form action={ async () => {
                 "use server";
 
                 await signOut({ redirectTo: "/" });
@@ -47,7 +47,7 @@ const Navbar = async () => {
               </Link>
             </>
           ) : (
-            <form onSubmit={ async () => {
+            <form action={ async () => {
 
               "use server";
 
